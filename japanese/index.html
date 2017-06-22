@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Learn Japanese!</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="javaCode.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+	$('#houseContent').css('visibility', 'hidden');
+});
+</script>
+<script type="text/javascript" language="javascript">
+function is_loaded() { 
+
+//DOM
+if (document.getElementById){
+document.getElementById('preloader').style.visibility='hidden';
+document.getElementById('houseContent').style.visibility='visible';
+}else{
+if (document.layers){ //NS4
+document.preloader.visibility = 'hidden';
+document.houseContent.visibility = 'visible';
+}
+else { //IE4
+document.all.preloader.style.visibility = 'hidden';
+document.all.houseContent.style.visibility = 'visible';
+}
+}
+}
+//-->
+</script>
+
+</head>
+<body onload="is_loaded();">
+<div id="preloader">
+	<img id="loading" src="gifs/loading.gif"/>
+	<img id="gif" src="gifs/gif.gif"/>
+</div>
+
+<div id="houseContent">
+
+<img id="bgimg" src="images/house.png"/>
+
+<!-- --- BEDROOM --- !-->
+<img id="bed" src="images/bed.png"/>
+<img id="pillow" src="images/pillow.png"/>
+<img id="sTable" src="images/sTable.png"/>
+<img id="sTableD" src="images/sTableDrawer.png"/>
+<img id="dresser" src="images/dresser.png"/>
+<img id="handle" src="images/handle.png"/>
+<img id="closet" src="images/closet.png"/>
+<img id="doorKnob" src="images/doorKnob.png"/>
+
+<!-- --- LIVING ROOM --- !-->
+<img id="couch" src="images/couch.png"/>
+<img id="cushion" src="images/cushion.png"/>
+<img id="cat" src="images/cat.png"/>
+<img id="dog" src="images/dog.png"/>
+<img id="picture" src="images/liv2.png"/>
+<img id="lamp" src="images/lamp.png"/>
+<img id="clock" src="images/clock.png"/>
+<img id="socket" src="images/socket.png"/>
+<img id="calendar" src="images/calendar.png"/>
+<img id="stairs" src="images/stairs.png"/>
+<img id="stair" src="images/stair.png"/>
+
+<!-- --- KITCHEN/ENTRY --- !-->
+<img id="door" src="images/door.png"/>
+<img id="peepHole" src="images/peephole.png"/>
+<img id="mailSlot" src="images/mailslot.png"/>
+<img id="coatRack" src="images/coatrack.png"/>
+<img id="jacket" src="images/jacket.png"/>
+<img id="table" src="images/table.png"/>
+<img id="chairs" src="images/chairs.png"/>
+<img id="fridge" src="images/fridge.png"/>
+<img id="freezer" src="images/freezer.png"/>
+<img id="cabinets" src="images/cabinets.png"/>
+<img id="counter" src="images/counter.png"/>
+<img id="stove" src="images/stove.png"/>
+<img id="burners" src="images/burners.png"/>
+<img id="oven" src="images/oven.png"/>
+
+<!-- --- BATHROOM --- !-->
+<img id="toilet" src="images/toilet.png"/>
+<img id="tub" src="images/tub.png"/>
+<img id="mirror" src="images/mirror.png"/>
+<img id="shower" src="images/shower.png"/>
+<img id="showerHead" src="images/showerhead.png"/>
+<img id="drain" src="images/drain.png"/>
+<img id="sink" src="images/sink.png"/>
+<img id="faucet" src="images/faucet.png"/>
+
+<!-- --- EXTRA ROOM --- !-->
+<img id="window" src="images/window.png"/>
+<img id="railing" src="images/railing.png"/>
+<img id="plant" src="images/plant.png"/>
+
+<!-- ---------------------------- !-->
+
+<!-- ---- NON INTERACTIVE ---- !-->
+<img id="frame" src="images/frame.png"/>
+<img id="frame2" src="images/frame2.png"/>
+<img id="frame3" src="images/frame3.png"/>
+<img id="frame4" src="images/frame4.png"/>
+<img id="family" src="images/family.png"/>
+<img id="liv1" src="images/liv1.png"/>
+</div>
+
+</body>
+</html>

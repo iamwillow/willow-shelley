@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Learn Japanese</title>
+        <link rel="stylesheet" href="global.css">
+<!--h1 font!--><link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+<!--p font!--><link href='http://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+<!--h4 font!--><link href='http://fonts.googleapis.com/css?family=Simonetta' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!-- NAV BAR !-->
+<div id="topbar">
+  <a href="index.html"><h1>Learn Japanese</h1></a>
+  <ul id="nav">
+    <li class="selected"><a href="study3.html">Lesson Three</a></li>
+    <li><a href="study2.html">Lesson Two</a></li>
+    <li><a href="study1.html">Lesson One</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>  
+</div>
+
+<!-- Page Content !-->
+<div id="content">
+  <div id="info">
+    <h4>Welcome.</h4>
+    <h5>Through visual and audio learning, we will take you through three lessons to learn a total of fifteen Japanese words.</h5>
+    <h5>To get started, please choose a topic below.  You will be guided through a study lesson.  After the lesson you will be offered a final quiz to test your knowledge. </h5>
+  </div>
+  <div class="lesson" id="les1" onClick="whichlessonF(1)">
+    <h3>Lesson One</h3>
+    <p>Bedroom</p>
+    <img src="one.png"/>
+  </div>
+  <div class="lesson" id="les2" onClick="whichlessonF(2)">
+    <h3>Lesson Two</h3>
+    <p>Living Room</p>
+    <img src="two.png"/>
+  </div>
+  <div class="lesson" id="les3" onClick="whichlessonF(3)">
+    <h3>Lesson Three</h3>
+    <p>Kitchen</p>
+    <img src="three.png"/>
+  </div>
+  <div id="title"></div>
+  <div id="quiz"></div>
+  <div id="quiz2"></div>
+  <div id="next"></div>
+  <div id="test"></div>
+  <div id="finalquiz"></div>
+  <div id="quizF"></div>
+</div>
+
+<!-- Footer !-->
+<nav id="footer">
+  <h2 class="nav-header">Other Resources:</h2>
+  <a target="_blank" href="http://jisho.org/words/">Dictionary</a>
+  <a target="_blank" href="http://www.forvo.com/">Pronunciation</a>
+</nav>
+<script type="text/javascript" src="study.js"></script>
+</body>
+</html>
