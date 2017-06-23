@@ -4,7 +4,7 @@ This repo is the source code to willow.shelley.com
 
 ## Usage
 
-The purpose of this repo is to document changes to my resume website, while also allowing employers easy access to view the code.
+The purpose of this repo is to document changes to the website, while also allowing employers easy access to view the code source.
 
 ## Contributing
 
