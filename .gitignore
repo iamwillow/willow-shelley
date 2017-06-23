@@ -4,8 +4,3 @@
 !/dist/index.html
 /uploads/*
 npm-debug.log
-*.eot
-*.svg
-*.woff
-*.woff2
-*.ttf
