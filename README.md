@@ -8,4 +8,4 @@ The purpose of this repo is to document changes to the website, while also allow
 
 ## Contributing
 
-If you happen to stumble across this repository and would like to comment on the code, feel free to contact me by [opening an issue](https://github.com/iamwillow/first-javascript-project/issues/new) and adding your suggestion. 
+If you happen to stumble across this repository and would like to comment on the code, feel free to contact me by [opening an issue](https://github.com/iamwillow/willow-shelley/issues/new) and adding your suggestion. 
