@@ -9,20 +9,21 @@ The purpose of this repo is to document changes to the website, while also allow
 To get up an running, be sure to install:
 ```
 npm install --save-dev 
-      babel-loader
       babel-core
+      babel-loader
       babel-preset-es2015
       babel-preset-react
-      webpack
+      css-loader
+      file-loader
+      node-sass
       react
       react-dom
       sass-loader
-      node-sass
       style-loader
-      css-loader
-      file-loader
+      webpack
+      webpack-dev-server
 ```
-Build with `webpack` and run on a local server.
+Build and run on a local server with `npm start`.
 
 
 ## Contributing
