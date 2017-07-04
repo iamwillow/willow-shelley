@@ -1,0 +1,16 @@
+.shape-wrap {
+  width: 400px;
+  position: relative;
+  margin-left: 65%;
+  margin-top: 80px;
+
+  > .unicorn {
+  	width: 200px;
+
+  	> svg {
+  		width: 120px;
+  	}
+
+  }
+
+}

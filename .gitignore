@@ -1,6 +1,6 @@
 **/.DS_Store
 /node_modules
-/dist/*
+/build/*
 !/dist/index.html
 /uploads/*
 npm-debug.log

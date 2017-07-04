@@ -4,9 +4,9 @@ var path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/',
-    filename: './build/bundle.js'
+    path: path.join(__dirname, 'build/'),
+    publicPath: "/build/",
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -35,6 +35,10 @@ module.exports = {
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader'
       },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
+      }
     ]
   },
   resolve: {

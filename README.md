@@ -8,7 +8,8 @@ The purpose of this repo is to document changes to the website, while also allow
 
 To get up an running, be sure to install:
 ```
-npm install --save-dev 
+npm install -S
+      ajv
       babel-core
       babel-loader
       babel-preset-es2015
@@ -20,10 +21,14 @@ npm install --save-dev
       react-dom
       sass-loader
       style-loader
+      url-loader
       webpack
+```
+```
+npm install -D 
       webpack-dev-server
 ```
-Build and run on a local server with `npm start`.
+Build and run with `npm start`.
 
 
 ## Contributing
