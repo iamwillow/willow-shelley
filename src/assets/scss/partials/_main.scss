@@ -1,13 +1,14 @@
 html, body, div, span, h1, h2, h3, h4, p, a {
-	margin: 0; padding: 0;
-	font-family: 'Noto Sans', sans-serif;
+  margin: 0; padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background-color: #ddd;
 }
 
 h1 {
-	color: #fff;
-	font-size: 112px;
-	font-family: 'Schoolbell', 'Open Sans', sans-serif;
-	text-shadow: -4px 2px rgba(74, 41, 9, 0.4);
+  font-size: 40px;
 }
 
 h2 {}
@@ -16,18 +17,40 @@ h4 {}
 p  {}
 a  {}
 
-div.cover {
-	background-image: url(../img/forest_3255.jpg);
-	background-repeat: no-repeat;
-	background-position: bottom right;
-	height: 100%;
-	width: 100%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  li {
+    display: inline;
+    margin: 0 15px;
+  }
+  li.first {
+    margin-left: 0;
+  }
+  li.last {
+    margin-right: 0;
+  }
 }
 
-div.cover-text {
-	padding: 20% 0 0 15%;
+div.cover {
+  margin: 0;
+  height: 100%;
+  min-height: 800px;
+  width: 100%;
+  .nav-bar {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    a { 
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+div.max-width {
+  width: 980px;
+  margin: 0 auto;
 }
