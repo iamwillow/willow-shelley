@@ -1,3 +1,40 @@
-@media (max-width: 1000px) {
+div.max-width, div {
+  min-width: 360px;
+}
 
+@media (max-width: 1100px) {
+  div.max-width {
+    width: 100%;
+    margin: 0;
+  }
+  .nav-bar { 
+    div.max-width {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  div.cover {
+    .cover-title {
+      margin: 50px 0 0 0;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // large handset
+  h1 {
+    font-size: 25px;
+  }
+  div.cover {
+    .nav-bar {
+      ul {
+        text-align: center;
+      }
+    }
+  }
 }

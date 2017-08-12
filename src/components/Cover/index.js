@@ -5,19 +5,16 @@ class Cover extends React.Component {
   render () {
     return (
       <div className='cover'>
-        <div className='nav-bar'>
-          <div className='max-width'>
-            <ul>
-              <li className='first'><a href="#">Top</a></li>
-              <li>|</li>
-              <li><a href="#">About</a></li>
-              <li>|</li>
-              <li className='last'><a href="#">Experience</a></li>
-            </ul>
-          </div>
-        </div>
+        <nav className='nav-bar'>
+          <a className="first" href="#">Top</a> |
+          <a href="#">About</a> |
+          <a className="last" href="#">Experience</a>
+        </nav>
         <div className='max-width'>
-          <h1>Content</h1>
+          <div className='cover-title'>
+            <h1>Don't let your website</h1>
+            <h1>go extinct.</h1>
+          </div>
         </div>
       </div>
     );
