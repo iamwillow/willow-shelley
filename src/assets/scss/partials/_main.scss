@@ -10,7 +10,10 @@ h1 {
   font-size: 40px;
 }
 
-h2 {}
+h2 {
+  font-size: 30px;
+}
+
 h3 {}
 h4 {}
 p  {}
@@ -27,7 +30,7 @@ div.max-width {
 }
 
 div.cover {
-  background: url(../img/cover-background.svg) #0077a2;
+  background: url(../img/cover-background.png) #0077a2;
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 100%;
@@ -61,6 +64,76 @@ div.cover {
   }
   .cover-title {
     margin: 175px 0 0 50px;
-    text-shadow: 0px 1px rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+}
+
+$dino-tube-width: 120px;
+div.about {
+  padding-top: 200px;
+  background-color: #00587c;
+  height: 600px;
+  .dino-tube-wrapper {
+    position: relative;
+    img.dino-tube {
+      position: absolute;
+      width: $dino-tube-width;
+      z-index: 2;
+    }
+    img.dino-1 { left: 15px; }
+    img.dino-2 { left: $dino-tube-width + 15; }
+    img.dino-3 { left: ($dino-tube-width * 2) + 15; }
+    img.dino-4 { left: ($dino-tube-width * 3) + 15; }
+    img.dino-5 { left: ($dino-tube-width * 4) + 15; }
+
+    img.bubble {
+      width: 15px;
+      position: absolute;
+      bottom: -55;
+      left: 0;
+      z-index: 1;
+    }
+
+    img.bubble-float {
+      animation: bubbleFloat 4s;
+      animation-timing-function: linear;
+    }
+
+    @keyframes bubbleFloat {
+      0% {
+        bottom: -55px;
+        transform: scale(1);
+      }
+      90% {
+        opacity: 1;
+        bottom: 130px;
+        transform: scale(1);
+      }
+      91% {
+        opacity: .5;
+        bottom: 130px;
+        transform: scale(2);
+      }
+      92% {
+        opacity: 0;
+        bottom: 130px;
+      }
+      100% {
+        opacity: 0;
+        bottom: -55px;
+        transform: scale(1);
+      }
+    }
+
+    img.bubble-1 { left: $dino-tube-width - 50px; }
+    img.bubble-2 { left: ($dino-tube-width * 2) - 50; }
+    img.bubble-3 { left: ($dino-tube-width * 3) - 50; }
+    img.bubble-4 { left: ($dino-tube-width * 4) - 50; }
+    img.bubble-5 { left: ($dino-tube-width * 5) - 50; }
+  }
+  h2 {
+    color: #fff;
+    margin-top: 50px;
   }
 }
