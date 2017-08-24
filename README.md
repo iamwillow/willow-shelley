@@ -19,6 +19,7 @@ npm install -S
       node-sass
       react
       react-dom
+      react-scroll
       sass-loader
       style-loader
       url-loader
