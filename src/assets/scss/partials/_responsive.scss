@@ -1,6 +1,10 @@
-div.max-width, div {
-  min-width: 360px;
+div.max-width {
+  //min-width: 360px;
+  min-width: 1200px;
+  // temporary until responsive design is set
 }
+
+
 
 @media (max-width: 1100px) {
   div.max-width {
@@ -17,10 +21,10 @@ div.max-width, div {
 @media (max-width: 1090px) {
   div.cover {
     .cover-title {
-      margin: 50px 0 0 0;
-      text-align: center;
-      color: #fff;
-      text-shadow: 1px 4px rgba(0, 0, 0, 0.2);
+      // margin: 50px 0 0 0;
+      // text-align: center;
+      // color: #fff;
+      // text-shadow: 1px 4px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -28,12 +32,12 @@ div.max-width, div {
 @media (max-width: 480px) {
   // large handset
   h1 {
-    font-size: 25px;
+    //font-size: 25px;
   }
   div.cover {
     .nav-bar {
       ul {
-        text-align: center;
+        //text-align: center;
       }
     }
   }

@@ -9,24 +9,17 @@ class About extends React.Component {
     return (
       <Element name="about" className="about">
         <div className="max-width">
-        	<div className="col-sm-8 dino-tube-wrapper">
-        		<img id="bubble-1" className="bubble bubble-1" src={require('../../assets/img/bubble-1.png')}/>
-	          <img className="dino-tube dino-1" src={require('../../assets/img/dino-1.png')}/>
-
-	          <img className="bubble bubble-2"  src={require('../../assets/img/bubble-2.png')}/>
-	          <img className="dino-tube dino-2" src={require('../../assets/img/dino-2.png')}/>
-
-	          <img className="bubble bubble-3"  src={require('../../assets/img/bubble-3.png')}/>
-	          <img className="dino-tube dino-3" src={require('../../assets/img/dino-3.png')}/>
-
-	          <img className="bubble bubble-4"  src={require('../../assets/img/bubble-4.png')}/>
-	          <img className="dino-tube dino-4" src={require('../../assets/img/dino-4.png')}/>
-
-	          <img className="bubble bubble-5"  src={require('../../assets/img/bubble-5.png')}/>
-	          <img className="dino-tube dino-5" src={require('../../assets/img/dino-5.png')}/>
-	         </div>
-	         <div className="col-sm-4">
-        		<h2>Let these skillsets be the <b>DNA</b> of your creation.</h2>
+        	<div className="col-sm-6 bookshelf">
+            <img src={require('../../assets/img/lab-bookshelf.png')}/>
+          </div>
+          <div className="col-sm-6 lab-right">
+            <img className="chalkboard" src={require('../../assets/img/lab-chalkboard.png')}/>
+        		<h1 className="chalkboard-text">
+              Let these skillsets<br/>
+              be the <b>DNA</b> of<br/>
+              your creation.
+            </h1>
+            <img className="dinos" src={require('../../assets/img/lab-dinos.png')}/>
         	</div>
         </div>
       </Element>

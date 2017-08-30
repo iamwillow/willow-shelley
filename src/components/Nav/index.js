@@ -40,7 +40,7 @@ class Nav extends React.Component {
   setSelected(index) {
   	this.setState({
   		selected: index
-  	})
+  	});
   }
 
 	render () {
@@ -51,7 +51,7 @@ class Nav extends React.Component {
 						key={index}
 						to={item.to} 
 						activeClass="active"
-						onClick={this.setSelected({index})}
+						onClick={() => this.setSelected({index})}
 						spy={true} 
 						smooth={true} 
 						duration={500}>
