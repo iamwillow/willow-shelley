@@ -10,10 +10,10 @@ class Exper extends React.Component {
   render () {
     return (
       <Element name="exper" className="exper">
-        <div className="max-width">
+        <div className="min-width">
           <center>
             <div className="exper-box">
-              <h1>Willow Shelley</h1>
+              <h1 className="willow">Willow Shelley</h1>
             </div>
             <div className="exper-box">
               <h2 className="exper-title-main">UI/UX Engineer with 5 years professional experience.</h2>

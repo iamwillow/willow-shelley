@@ -28,11 +28,6 @@ hr {}
   color: #aaa;
 }
 
-div.max-width {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .nav-bar {
   position: fixed;
   z-index: 3;
@@ -62,42 +57,42 @@ div.max-width {
 }
 
 .cover {
-  background: url(../img/cover-background.png);
-  background-repeat: no-repeat;
-  background-position: top center;
   height: 100vh;
-  margin: ($nav-height - 20) 0 0 0;
+  margin: 0;
   .cover-title {
     padding: 280px 0 0 50px;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
     font-family: 'News Title', sans-serif;
     color: #fff;
   }
 }
 
 .about {
-  margin-top: 50px;
   height: 100vh;
   .bookshelf {
     margin-top: 112px;
+    background: url(../img/lab-bookshelf.png) top center no-repeat;
+    height: 668px;
+    width: 590px;
+    float: left;
   }
   .lab-right {
+    float: right;
     margin-top: 112px;
     position: relative;
+    width: 550px;
     img.chalkboard {
       margin-left: 25px;
+      width: 550px;
     }
     img.dinos {
-      margin: 27px 0 0 25px;
-    }
-    h1 {
-      color: #fff;
-      font-family: 'Walter Turncoat', sans-serif;
+      margin: 52px 0 0 25px;
     }
     .chalkboard-text {
       position: absolute;
+      color: #b6dbdd;
+      font-family: 'Walter Turncoat', sans-serif;
       top: 50px;
-      left: 70px;
+      left: 60px;
     }
   }
 }

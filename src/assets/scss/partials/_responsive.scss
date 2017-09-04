@@ -1,12 +1,48 @@
-div.max-width {
-  //min-width: 360px;
-  min-width: 1200px;
-  // temporary until responsive design is set
+div.min-width {
+  min-width: 360px;
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.bookshelf-mobile {
+  display: none;
 }
 
+@media (min-width: 1101px) {
+  .cover {
+    background: url(../img/cover-background-1500.png) top center no-repeat;
+  }
+}
 
+@media (max-width: 1260px) {
+  .about {
+    margin-top: 50px;
+    height: auto;
+    .bookshelf {
+      margin: 20px auto -20px auto;
+      background: url(../img/lab-bookshelf-sm.png) top center no-repeat;
+      height: 402px;
+      width: 827px;
+      float: none;
+    }
+    .lab-right {
+      float: none;
+      margin: 0 auto;
+      img.dinos {
+        display: none;
+      }
+    }
+  }
+}
 
 @media (max-width: 1100px) {
+  .cover {
+    background: url(../img/cover-background-1100.png)  top center no-repeat;
+    .cover-title {
+      padding: 210px 0 0 100px;
+      font-size: 34px;
+    }
+  }
   div.max-width {
     width: 100%;
     margin: 0;
@@ -18,27 +54,117 @@ div.max-width {
   }
 }
 
-@media (max-width: 1090px) {
-  div.cover {
+@media (max-width: 1000px) {
+  .cover {
     .cover-title {
-      // margin: 50px 0 0 0;
-      // text-align: center;
-      // color: #fff;
-      // text-shadow: 1px 4px rgba(0, 0, 0, 0.2);
+      padding-left: 5%;
+      font-size: 30px;
     }
+  }
+  .about {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .hide-900 {
+    display: none;
+  }
+  .cover {
+    max-height: 750px;
+  }
+  .about {
+    .lab-right {
+      position: initial;
+      .chalkboard {
+        display: none;
+      }
+      .chalkboard-text {
+        position: initial;
+        color: #b6dbdd;
+        font-family: 'Muli', sans-serif;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .bookshelf {
+      background: none;
+      float: none;
+      width: 100%;
+      text-align: center;
+      .bookshelf-mobile {
+        display: block;
+        width: 100%;
+        max-width: 550px;
+      }
+    }
+  }
+  .exper {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cover {
+    background: url(../img/cover-background-800.png) top center no-repeat;
+    .cover-title {
+      padding-left: 8%;
+      font-size: 28px;
+    }
+  }
+  .exper {
+    .willow {
+      font-size: 35px;
+    }
+    .exper-title-main {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .cover {
+    background: url(../img/cover-background-800.png) top center no-repeat;
+    .cover-title {
+      padding: 200px 0 0 0;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: -2px -1px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .about {
+    .lab-right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .exper {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 530px) {
+  .exper {
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 480px) {
   // large handset
   h1 {
-    //font-size: 25px;
+    font-size: 25px;
   }
   div.cover {
     .nav-bar {
       ul {
-        //text-align: center;
+        text-align: center;
       }
     }
+  }
+  .exper {
+    margin-top: 0;
   }
 }

@@ -22,6 +22,9 @@ class Nav extends React.Component {
 	constructor(props) {
 		super(props);
 		this.scrollToTop = this.scrollToTop.bind(this);
+		this.state = {
+			selected: 0
+		}
 	}
 
 	componentDidMount() {
