@@ -1,0 +1,121 @@
+$nav-height: 50px;
+$dino-tube-width: 90px;
+
+html, body, h1, h2, h3, h4, p, a {
+  font-family: 'Muli', sans-serif;
+}
+
+body {
+  background-color: #0b0b4f;
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 30px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+p  { font-size: 16px; }
+a  {
+  text-decoration: none;
+  font-weight: 100;
+}
+ul {}
+br {}
+hr {}
+.grey-text {
+  font-weight: 100;
+  color: #aaa;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 3;
+  height: $nav-height;
+  top: 0;
+  background-color: #333;
+  box-shadow: 0px 4px 40px -8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  padding: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #030338;
+  a { 
+    padding: 0 10px 2px 10px;
+    margin: 0 10px;
+    &.first { padding-left: 0; }
+    color: #fff;
+    &:hover {
+      color: #5ebbdd;
+      cursor: pointer;
+    }
+    &.active {
+      border-bottom: 2px solid #5ebbdd;
+    }
+  }
+}
+
+.cover {
+  height: 100vh;
+  margin: 0;
+  .cover-title {
+    padding: 280px 0 0 50px;
+    font-family: 'News Title', sans-serif;
+    color: #fff;
+  }
+}
+
+.about {
+  height: 100vh;
+  .bookshelf {
+    margin-top: 112px;
+    background: url(../img/lab-bookshelf.png) top center no-repeat;
+    height: 668px;
+    width: 590px;
+    float: left;
+  }
+  .lab-right {
+    float: right;
+    margin-top: 112px;
+    position: relative;
+    width: 550px;
+    img.chalkboard {
+      margin-left: 25px;
+      width: 550px;
+    }
+    img.dinos {
+      margin: 52px 0 0 25px;
+    }
+    .chalkboard-text {
+      position: absolute;
+      color: #b6dbdd;
+      font-family: 'Walter Turncoat', sans-serif;
+      top: 50px;
+      left: 60px;
+    }
+  }
+}
+
+.exper {
+  background: url(../img/chemical-background.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: #003664;
+  padding: 80px 0;
+  .exper-box {
+    margin-bottom: 20px;
+  }
+  .exper-title-main {
+    font-weight: 100;
+  }
+  .exper-title {
+    margin-bottom: 10px;
+  }
+  .exper-company {
+    margin-bottom: 20px;
+  }
+  .exper-desc {
+    margin-bottom: 60px;
+  }
+}
