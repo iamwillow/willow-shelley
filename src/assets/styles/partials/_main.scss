@@ -95,6 +95,12 @@ hr {}
       left: 60px;
     }
   }
+  .skills {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #b6dbdd;
+  }
 }
 
 .exper {
@@ -102,7 +108,10 @@ hr {}
   background-repeat: no-repeat;
   background-position: center right;
   background-color: #003664;
-  padding: 80px 0;
+  padding: 80px 0 0 0;
+  .history {
+    margin-left: 20%;
+  }
   .exper-box {
     margin-bottom: 20px;
   }
@@ -117,5 +126,9 @@ hr {}
   }
   .exper-desc {
     margin-bottom: 60px;
+    color: #b6dbdd;
+  }
+  .exper-desc.last {
+    margin-bottom: 0;
   }
 }

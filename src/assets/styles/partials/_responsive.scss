@@ -4,7 +4,7 @@ div.min-width {
   padding: 0 20px;
   margin: 0 auto;
 }
-.bookshelf-mobile {
+.bookshelf-mobile, .show-900 {
   display: none;
 }
 
@@ -70,10 +70,15 @@ div.min-width {
   .hide-900 {
     display: none;
   }
+  .show-900 {
+    display: block;
+  }
   .cover {
-    max-height: 750px;
+    height: 750px;
   }
   .about {
+    background: url(../img/lab-egg.png) bottom center no-repeat;
+    height: 550px;
     .lab-right {
       position: initial;
       .chalkboard {
@@ -83,8 +88,9 @@ div.min-width {
         position: initial;
         color: #b6dbdd;
         font-family: 'Muli', sans-serif;
-        text-align: center;
         font-size: 30px;
+        margin-bottom: 45px;
+        text-align: center;
       }
     }
     .bookshelf {
@@ -103,6 +109,9 @@ div.min-width {
     margin-top: 180px;
     background: none;
     background-color: #003664;
+    .history {
+      margin-left: 10%;
+    }
   }
 }
 
@@ -110,7 +119,7 @@ div.min-width {
   .cover {
     background: url(../img/cover-background-800.png) top center no-repeat;
     .cover-title {
-      padding: 140px 0 0 0;
+      padding: 100px 0 0 0;
       text-align: center;
       font-size: 35px;
       text-shadow: -2px -1px rgba(0, 0, 0, 0.2);

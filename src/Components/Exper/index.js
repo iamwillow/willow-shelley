@@ -29,8 +29,7 @@ class Exper extends React.Component {
               <p className="exper-desc">
                 Willow both designs and develops core functionality 
                 pages for Rakuten membership team. Roles range 
-                from UI designs and mockups, UX consideration and 
-                research, front-end engineering, and project 
+                from UI design, front-end engineering, and project 
                 coordination.
               </p>
             </div>
@@ -42,9 +41,9 @@ class Exper extends React.Component {
               </p>
               <p className="exper-desc">
                 Working for a large third-party company, Willow 
-                helped design and develop corporate websites that 
-                held a global standard. She also handled small 
-                scale project management and client communications.
+                developed websites upholding a global standard. 
+                She also handled small scale project management 
+                and client communications.
               </p>
             </div>
             <div className="exper-box">
@@ -53,8 +52,8 @@ class Exper extends React.Component {
                 FREELANCE
                 <span className="grey-text"> 2012 - 2013 (1yr, 4mo)</span>
               </p>
-              <p>
-                As a freelance web developer Willow was in charge 
+              <p className="exper-desc last">
+                As a freelance web developer, Willow was in charge 
                 of all aspects of website creation including design, 
                 development, and optimization.
               </p>

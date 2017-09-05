@@ -15,7 +15,7 @@ class About extends React.Component {
               src={require('../../assets/img/lab-chalkboard.png')}
               alt="chalkboard"/>
         		<h1 className="chalkboard-text">
-              Let these skillsets <br className="hide-900"/>
+              These skillsets will <br className="hide-900"/>
               be the <b>DNA</b> of <br className="hide-900"/>
               your creation.
             </h1>
@@ -24,7 +24,7 @@ class About extends React.Component {
               src={require('../../assets/img/lab-dinos.png')}
               alt="dinosaurs"/>
         	</div>
-          <div className="bookshelf">
+          <div className="bookshelf hide-900">
             <center>
               <img 
                 className="bookshelf-mobile" 
@@ -32,6 +32,12 @@ class About extends React.Component {
                 alt="skills"/>
               <br style={clearBoth}/>
             </center>
+          </div>
+          <div className="show-900">
+            <p className="skills">Html, &nbsp; Css, &nbsp; Sass,</p>
+            <p className="skills">JavaScript (ES6),</p>
+            <p className="skills">jQuery, &nbsp; React JS,</p>
+            <p className="skills">Unix, &nbsp; Npm, &nbsp; Git</p>
           </div>
           <br style={clearBoth}/>
         </div>

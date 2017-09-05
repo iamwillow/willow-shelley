@@ -231,13 +231,20 @@ a {
       font-family: 'Walter Turncoat', sans-serif;
       top: 50px;
       left: 60px; }
+  .about .skills {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #b6dbdd; }
 
 .exper {
   background: url(../img/chemical-background.png);
   background-repeat: no-repeat;
   background-position: center right;
   background-color: #003664;
-  padding: 80px 0; }
+  padding: 80px 0 0 0; }
+  .exper .history {
+    margin-left: 20%; }
   .exper .exper-box {
     margin-bottom: 20px; }
   .exper .exper-title-main {
@@ -247,7 +254,10 @@ a {
   .exper .exper-company {
     margin-bottom: 20px; }
   .exper .exper-desc {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    color: #b6dbdd; }
+  .exper .exper-desc.last {
+    margin-bottom: 0; }
 
 div.min-width {
   min-width: 360px;
@@ -255,7 +265,7 @@ div.min-width {
   padding: 0 20px;
   margin: 0 auto; }
 
-.bookshelf-mobile {
+.bookshelf-mobile, .show-900 {
   display: none; }
 
 @media (min-width: 1101px) {
@@ -300,37 +310,45 @@ div.min-width {
 @media (max-width: 900px) {
   .hide-900 {
     display: none; }
+  .show-900 {
+    display: block; }
   .cover {
-    max-height: 750px; }
-  .about .lab-right {
-    position: initial; }
-    .about .lab-right .chalkboard {
-      display: none; }
-    .about .lab-right .chalkboard-text {
-      position: initial;
-      color: #b6dbdd;
-      font-family: 'Muli', sans-serif;
-      text-align: center;
-      font-size: 30px; }
-  .about .bookshelf {
-    background: none;
-    float: none;
-    width: 100%;
-    text-align: center; }
-    .about .bookshelf .bookshelf-mobile {
-      display: block;
+    height: 750px; }
+  .about {
+    background: url(../img/lab-egg.png) bottom center no-repeat;
+    height: 550px; }
+    .about .lab-right {
+      position: initial; }
+      .about .lab-right .chalkboard {
+        display: none; }
+      .about .lab-right .chalkboard-text {
+        position: initial;
+        color: #b6dbdd;
+        font-family: 'Muli', sans-serif;
+        font-size: 30px;
+        margin-bottom: 45px;
+        text-align: center; }
+    .about .bookshelf {
+      background: none;
+      float: none;
       width: 100%;
-      max-width: 550px; }
+      text-align: center; }
+      .about .bookshelf .bookshelf-mobile {
+        display: block;
+        width: 100%;
+        max-width: 550px; }
   .exper {
     margin-top: 180px;
     background: none;
-    background-color: #003664; } }
+    background-color: #003664; }
+    .exper .history {
+      margin-left: 10%; } }
 
 @media (max-width: 800px) {
   .cover {
     background: url(../img/cover-background-800.png) top center no-repeat; }
     .cover .cover-title {
-      padding: 140px 0 0 0;
+      padding: 100px 0 0 0;
       text-align: center;
       font-size: 35px;
       text-shadow: -2px -1px rgba(0, 0, 0, 0.2); }
