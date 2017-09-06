@@ -304,3 +304,10 @@ a {
         font-family: 'Walter Turncoat', sans-serif;
         top: 50px;
         left: 60px; } }
+
+@media (min-width: 1440px) {
+  .cover {
+    height: 1000px;
+    background: url(../img/cover-background-1900.png) top center no-repeat; }
+    .cover .cover-title {
+      padding: 140px 0 0 100px; } }

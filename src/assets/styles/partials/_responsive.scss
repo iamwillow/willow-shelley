@@ -92,4 +92,11 @@
 
 @media (min-width: 1440px) {
   // large screens
+  .cover {
+    height: 1000px;
+    background: url(../img/cover-background-1900.png) top center no-repeat;
+    .cover-title {
+      padding: 140px 0 0 100px;
+    }
+  }
 }
