@@ -9,7 +9,7 @@ class Exper extends React.Component {
   render () {
     return (
       <div className="exper">
-        <div className="min-width">
+        <div className="wrapper">
           <center>
             <div className="exper-box">
               <h1 className="willow">Willow Shelley</h1>
@@ -19,7 +19,7 @@ class Exper extends React.Component {
             </div>
           </center>
           <br/><br/>
-          <div className="col-sm-6">
+          <div className="col-sm-6 history">
             <div className="exper-box">
               <h3 className="exper-title">UI/UX Engineer</h3>
               <p className="exper-company">

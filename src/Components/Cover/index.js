@@ -7,7 +7,7 @@ class Cover extends React.Component {
   render () {
     return (
       <div className="cover">
-        <div className="min-width">
+        <div className="wrapper">
           <h1 className="cover-title">
             Don't let your website
             <br/>

@@ -147,7 +147,7 @@ html, body, h1, h2, h3, h4, p, a {
   font-family: 'Muli', sans-serif; }
 
 body {
-  background-color: #0b0b4f;
+  background-color: #002157;
   color: #fff;
   letter-spacing: .5px; }
 
@@ -174,63 +174,41 @@ a {
   font-weight: 100;
   color: #aaa; }
 
-.nav-bar {
-  position: fixed;
-  z-index: 3;
-  height: 50px;
-  top: 0;
-  background-color: #333;
-  box-shadow: 0px 4px 40px -8px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  color: #fff;
-  text-align: right;
-  padding: 12px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #030338; }
-  .nav-bar a {
-    padding: 0 10px 2px 10px;
-    margin: 0 10px;
-    color: #fff; }
-    .nav-bar a.first {
-      padding-left: 0; }
-    .nav-bar a:hover {
-      color: #5ebbdd;
-      cursor: pointer; }
-    .nav-bar a.active {
-      border-bottom: 2px solid #5ebbdd; }
+.wrapper {
+  min-width: 360px;
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto; }
 
 .cover {
-  height: 100vh;
-  margin: 0; }
+  height: 650px;
+  background: url(../img/cover-background-800.png) top left no-repeat; }
   .cover .cover-title {
-    padding: 280px 0 0 50px;
-    font-family: 'News Title', sans-serif;
-    color: #fff; }
+    padding: 60px 0 0 30px;
+    color: #002157;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px; }
 
 .about {
-  height: 100vh; }
+  height: 540px;
+  display: relative;
+  margin-top: 0;
+  background: url(../img/lab-egg.png) bottom center no-repeat;
+  background-color: #002157; }
   .about .bookshelf {
-    margin-top: 112px;
-    background: url(../img/lab-bookshelf.png) top center no-repeat;
-    height: 668px;
-    width: 590px;
-    float: left; }
-  .about .lab-right {
-    float: right;
-    margin-top: 112px;
-    position: relative;
-    width: 550px; }
-    .about .lab-right img.chalkboard {
-      margin-left: 25px;
-      width: 550px; }
-    .about .lab-right img.dinos {
-      margin: 52px 0 0 25px; }
-    .about .lab-right .chalkboard-text {
-      position: absolute;
-      color: #b6dbdd;
-      font-family: 'Walter Turncoat', sans-serif;
-      top: 50px;
-      left: 60px; }
+    background: none;
+    float: none;
+    width: 100%;
+    text-align: center; }
+  .about .lab-right .chalkboard-text {
+    color: #b6dbdd;
+    font-size: 30px;
+    margin-bottom: 45px;
+    text-align: center; }
+  .about .lab-right .lab-right {
+    margin: 0 auto; }
+    .about .lab-right .lab-right img.dinos {
+      display: none; }
   .about .skills {
     text-align: center;
     font-size: 22px;
@@ -238,17 +216,17 @@ a {
     color: #b6dbdd; }
 
 .exper {
-  background: url(../img/chemical-background.png);
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-color: #003664;
-  padding: 80px 0 0 0; }
+  padding-top: 80px;
+  background-color: #003664; }
+  .exper .willow {
+    font-size: 35px; }
   .exper .history {
-    margin-left: 20%; }
+    margin-left: 0; }
   .exper .exper-box {
     margin-bottom: 20px; }
   .exper .exper-title-main {
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 25px; }
   .exper .exper-title {
     margin-bottom: 10px; }
   .exper .exper-company {
@@ -259,120 +237,70 @@ a {
   .exper .exper-desc.last {
     margin-bottom: 0; }
 
-div.min-width {
-  min-width: 360px;
-  max-width: 1300px;
-  padding: 0 20px;
-  margin: 0 auto; }
-
-.bookshelf-mobile, .show-900 {
+/* breakpoints based on material design */
+.show-840, .show-1280 {
   display: none; }
 
-@media (min-width: 1101px) {
+@media (min-width: 840px) {
+  .show-840 {
+    display: block; }
+  .hide-840 {
+    display: none; }
   .cover {
-    background: url(../img/cover-background-1500.png) top center no-repeat; } }
-
-@media (max-width: 1260px) {
+    height: 720px;
+    background: url(../img/cover-background-1280.png) top left no-repeat; }
+    .cover .cover-title {
+      padding: 80px 0 0 180px;
+      font-size: 60px;
+      text-align: left; }
   .about {
-    margin-top: 50px;
-    height: auto; }
+    height: 400px;
+    background: url(../img/lab-dinos-sm.png) bottom center no-repeat; }
     .about .bookshelf {
       margin: 20px auto -20px auto;
-      background: url(../img/lab-bookshelf-sm.png) top center no-repeat;
-      height: 402px;
-      width: 827px;
       float: none; }
-    .about .lab-right {
-      float: none;
-      margin: 0 auto; }
-      .about .lab-right img.dinos {
-        display: none; } }
-
-@media (max-width: 1100px) {
-  .cover {
-    background: url(../img/cover-background-1100.png) top center no-repeat; }
-    .cover .cover-title {
-      padding: 210px 0 0 100px;
-      font-size: 34px; }
-  div.max-width {
-    width: 100%;
-    margin: 0; }
-  .nav-bar div.max-width {
-    padding: 0; } }
-
-@media (max-width: 1000px) {
-  .cover .cover-title {
-    padding-left: 5%;
-    font-size: 30px; }
-  .about {
-    margin-top: 0; } }
-
-@media (max-width: 900px) {
-  .hide-900 {
-    display: none; }
-  .show-900 {
-    display: block; }
-  .cover {
-    height: 750px; }
-  .about {
-    background: url(../img/lab-egg.png) bottom center no-repeat;
-    height: 550px; }
-    .about .lab-right {
-      position: initial; }
-      .about .lab-right .chalkboard {
-        display: none; }
-      .about .lab-right .chalkboard-text {
-        position: initial;
-        color: #b6dbdd;
-        font-family: 'Muli', sans-serif;
-        font-size: 30px;
-        margin-bottom: 45px;
-        text-align: center; }
-    .about .bookshelf {
-      background: none;
-      float: none;
-      width: 100%;
-      text-align: center; }
-      .about .bookshelf .bookshelf-mobile {
-        display: block;
-        width: 100%;
-        max-width: 550px; }
+    .about .dinos {
+      position: relative;
+      margin: 0 auto;
+      bottom: -20px; }
   .exper {
-    margin-top: 180px;
-    background: none;
-    background-color: #003664; }
+    background: url(../img/chemical-background.png) bottom right no-repeat #003664; }
     .exper .history {
       margin-left: 10%; } }
 
-@media (max-width: 800px) {
+@media (min-width: 1280px) {
+  .show-1280 {
+    display: block; }
+  .hide-1280 {
+    display: none; }
   .cover {
-    background: url(../img/cover-background-800.png) top center no-repeat; }
+    height: 800px;
+    background: url(../img/cover-background-1500.png) top center no-repeat; }
     .cover .cover-title {
-      padding: 100px 0 0 0;
-      text-align: center;
-      font-size: 35px;
-      text-shadow: -2px -1px rgba(0, 0, 0, 0.2); }
-  .exper .willow {
-    font-size: 35px; }
-  .exper .exper-title-main {
-    font-size: 25px; } }
-
-@media (max-width: 700px) {
-  .about .lab-right {
-    width: 100%; } }
-
-@media (max-width: 600px) {
-  .exper {
-    margin-top: 100px; } }
-
-@media (max-width: 530px) {
-  .exper {
-    margin-top: 50px; } }
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 25px; }
-  div.cover .nav-bar ul {
-    text-align: center; }
-  .exper {
-    margin-top: 0; } }
+      padding: 140px 0 0 100px; }
+  .about {
+    height: auto;
+    background-image: none;
+    padding-top: 50px; }
+    .about .wrapper {
+      display: flex;
+      justify-content: center; }
+    .about .bookshelf {
+      height: 668px;
+      width: 590px; }
+    .about .lab-right {
+      position: relative;
+      width: 550px; }
+      .about .lab-right img.chalkboard {
+        margin: 20px 0 0 25px;
+        width: 550px; }
+      .about .lab-right .dinos {
+        position: relative;
+        bottom: -52px; }
+      .about .lab-right .chalkboard-text {
+        position: absolute;
+        text-align: left;
+        color: #b6dbdd;
+        font-family: 'Walter Turncoat', sans-serif;
+        top: 50px;
+        left: 60px; } }
