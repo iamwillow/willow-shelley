@@ -6,7 +6,7 @@ This repo is the source code to willow.shelley.com
 
 The purpose of this repo is to document changes to the website, while also allowing employers easy access to view the code source.
 
-### How to run
+## How to run
 
 1. Install dependancies with `npm install`
 
